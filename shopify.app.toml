@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "fc9d0f716eacfad2197fc237608ad2de"
+name = "practice-shop"
+application_url = "https://proposed-stars-supporting-spoken.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-bc64e707.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_inventory,read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://proposed-stars-supporting-spoken.trycloudflare.com/auth/callback",
+  "https://proposed-stars-supporting-spoken.trycloudflare.com/auth/shopify/callback",
+  "https://proposed-stars-supporting-spoken.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
